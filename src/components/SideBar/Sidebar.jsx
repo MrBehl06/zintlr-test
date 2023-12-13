@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import navTexts from "../../constants/SidebarInfo";
+import navTexts from "../../constants/sidebarInfo";
 const Sidebar = () => {
   return (
     <div>
