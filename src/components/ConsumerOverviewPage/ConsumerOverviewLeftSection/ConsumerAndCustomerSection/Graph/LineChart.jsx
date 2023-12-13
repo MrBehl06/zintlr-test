@@ -1,8 +1,7 @@
 import React from "react";
-import { Line } from "react-chartjs-2";
+import Line from "react-chartjs-2";
 
 const LineChart = () => {
-  // Sample data
   const data = {
     labels: ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue"],
     datasets: [
