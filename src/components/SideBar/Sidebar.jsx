@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import navTexts from "../../constants/SidebarInfo";
+import nav from "../../constants/SidebarInfo";
 const Sidebar = () => {
   return (
     <div>
@@ -14,9 +14,9 @@ const Sidebar = () => {
           </div>
 
           <ul class="space-y-2 font-medium">
-            {navTexts.map((nav) => {
+            {nav.map((nav) => {
               return (
-                <li key={nav.text}>
+                <li key={nav.id}>
                   <a
                     href="#"
                     className="flex items-center p-3 text-gray-900 rounded-full hover:bg-[#29C5F6] hover:text-white group"
@@ -33,7 +33,4 @@ const Sidebar = () => {
     </div>
   );
 };
-
-{
-}
 export default Sidebar;

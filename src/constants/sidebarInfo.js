@@ -41,7 +41,7 @@ const navTexts = [
   },
   {
     id: 7,
-    text: " Other Operations",
+    text: "Other Operations",
     logo: SlOptions,
   },
   {
