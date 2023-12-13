@@ -1,12 +1,12 @@
 import React from "react";
 
-import Sidebar from "../SideBar/Sidebar";
 import TopBar from "../TopBar/TopBar";
 import ConsumerPageHeader2 from "../ConsumerPage/ConsumerHeader/ConsumerPageHeader2";
 import ConsumerOverview from "../ConsumerPage/ConsumerHeader/ConsumerOverview";
 import ConsumerTablePage from "../ConsumerPage/ConsumerTable/ConsumerTablePage";
 
 import RenderingPage from "../ConsumerPage/SingleConsumerPageSection2/RenderingPage";
+import Sidebar from "../SideBar/Sidebar";
 
 const SecondLandingPage = () => {
   return (
