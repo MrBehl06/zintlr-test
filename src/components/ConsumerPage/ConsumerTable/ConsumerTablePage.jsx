@@ -1,5 +1,5 @@
 import React from "react";
-import TableDropdownContent from "../../../constants/TableDropdownContent";
+import { TableDropdownContent } from "../../../constants/TableDropdownContent";
 import Dropdown from "./Dropdown";
 import ConsumerDetail from "./ConsumerDetail";
 import Pagination from "./Pagination";

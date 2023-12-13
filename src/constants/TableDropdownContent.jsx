@@ -1,4 +1,4 @@
-const TableDropdownContent = [
+export const TableDropdownContent = [
   {
     id: 1,
     mainText: "Revenue",
@@ -117,4 +117,3 @@ const TableDropdownContent = [
     ],
   },
 ];
-export default TableDropdownContent;

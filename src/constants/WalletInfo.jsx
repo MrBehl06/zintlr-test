@@ -4,7 +4,7 @@ import { FaWallet } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GiReceiveMoney } from "react-icons/gi";
 
-const walletInfo = [
+export const WalletInfo = [
   {
     id: 1,
     icon: RiMoneyDollarCircleFill,
@@ -13,7 +13,6 @@ const walletInfo = [
     mainText: "TruCard Cash Wallet ",
     text: "Wallet History",
     iconSecond: IoMdArrowDropright,
-   
   },
   {
     id: 2,
@@ -78,4 +77,3 @@ const walletInfo = [
     mainText: "Edit Consumer details",
   },
 ];
-export default walletInfo;

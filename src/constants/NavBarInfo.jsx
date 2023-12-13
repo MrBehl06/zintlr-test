@@ -7,10 +7,11 @@ import { CiBank } from "react-icons/ci";
 import { SiBitbucket } from "react-icons/si";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaQuestionCircle } from "react-icons/fa";
-const navTexts = [
+
+export const NavBarInfo = [
   {
     id: 1,
-    text: "Dasboard",
+    text: "Dashboard",
     logo: MdDashboard,
   },
   {
@@ -60,4 +61,3 @@ const navTexts = [
     logo: IoSettingsOutline,
   },
 ];
-export default navTexts;

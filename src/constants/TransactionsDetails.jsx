@@ -1,4 +1,4 @@
-const transactions = [
+export const TransactionsDetails = [
   {
     // We can also use 0  and 1 in the case of debited and credited
     id: 1,
@@ -68,5 +68,3 @@ const transactions = [
     status: "Success",
   },
 ];
-
-export default transactions;

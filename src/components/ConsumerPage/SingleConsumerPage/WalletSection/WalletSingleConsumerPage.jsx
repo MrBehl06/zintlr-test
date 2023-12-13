@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import info from "../../../../constants/WalletInfo";
+import { WalletInfo } from "../../../../constants/WalletInfo";
 import WalletSingleComsunerPageLeftSection from "./WalletSingleComsunerPageLeftSection";
 import GraphSingleConsumerPage from "../GraphSingleConsumerPage";
 
@@ -15,7 +15,7 @@ const WalletSingleConsumerPage = () => {
     section7,
     section8,
     section9,
-  ] = info;
+  ] = WalletInfo;
   // Past week logic
   const [selectedButton, setSelectedButton] = useState(null);
 

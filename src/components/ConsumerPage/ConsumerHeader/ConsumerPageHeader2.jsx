@@ -1,5 +1,5 @@
 import React from "react";
-import info from "../../../constants/ConsumerSectionHeaderInfo";
+import { ConsumerSectionHeaderInfo } from "../../../constants/ConsumerSectionHeaderInfo";
 import ConsumerSectionHeader1 from "./ConsumerSectionHeader1";
 const ConsumerPageHeader2 = () => {
   return (
@@ -11,7 +11,7 @@ const ConsumerPageHeader2 = () => {
           ButtonText1: "Add Consumer",
         }}
       />
-      {info.map((i) => {
+      {ConsumerSectionHeaderInfo.map((i) => {
         const color = i.style.color;
         const iconColor = i.style.iconColor;
         return (

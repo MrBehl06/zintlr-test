@@ -1,7 +1,7 @@
 import { HiIdentification } from "react-icons/hi";
 import { FaTicketAlt } from "react-icons/fa";
 import { MdError } from "react-icons/md";
-const info = [
+export const ConsumerSectionHeaderInfo = [
   {
     id: 1,
     fig: 246,
@@ -36,5 +36,3 @@ const info = [
     },
   },
 ];
-
-export default info;

@@ -1,13 +1,13 @@
 import React from "react";
-import info from "../../../constants/WalletInfo";
+import { WalletInfo } from "../../../constants/WalletInfo";
 import { MdOutlineArrowBack } from "react-icons/md";
-import transactionInfo from "../../../constants/TransactionsDetails";
+import { TransactionsDetails } from "../../../constants/TransactionsDetails";
 import { TbNotes } from "react-icons/tb";
 import { useMyContext } from "../../../Context/MyContext";
 import WalletSingleComsunerPageLeftSection from "../SingleConsumerPage/WalletSection/WalletSingleComsunerPageLeftSection";
 const MainSecondPage = () => {
   const { updatesecondSharedState } = useMyContext();
-  const [section1] = info;
+  const [section1] = WalletInfo;
   const handleClick = () => {
     updatesecondSharedState(null);
   };
@@ -38,7 +38,7 @@ const MainSecondPage = () => {
 
         <div className="p-4">
           <h3 className="m-1">Transaction History</h3>
-          {transactionInfo.map((trans) => {
+          {TransactionsDetails.map((trans) => {
             return (
               <>
                 <div className="flex justify-between m-1 items-center bg-white p-2 border-[1px] border-gray-200">
