@@ -5,7 +5,7 @@ const MyContext = createContext();
 
 export const MyContextProvider = ({ children }) => {
   const [sharedState, setSharedState] = useState(false);
-  const [secondSharedState, setsecondSharedState] = useState(null);
+  const [secondSharedState, setsecondSharedState] = useState(false);
 
   const updateSharedState = (newState) => {
     setSharedState(newState);

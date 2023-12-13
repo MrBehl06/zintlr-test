@@ -4,10 +4,12 @@ import { useMyContext } from "../../../Context/MyContext";
 import SinglePage from "../SingleConsumerPage/MainPage";
 
 const RenderingPage = () => {
-  const { sharedState, updateSharedState } = useMyContext();
+  const { sharedState, updateSharedState, updatesecondSharedState } =
+    useMyContext();
 
   const handleClickEvent = () => {
     updateSharedState(false);
+    updatesecondSharedState(false);
   };
 
   return (

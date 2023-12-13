@@ -9,7 +9,7 @@ const MainSecondPage = () => {
   const { updatesecondSharedState } = useMyContext();
   const [section1] = WalletInfo;
   const handleClick = () => {
-    updatesecondSharedState(null);
+    updatesecondSharedState(false);
   };
   return (
     <>
