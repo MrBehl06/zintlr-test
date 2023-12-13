@@ -12,9 +12,7 @@ const SecondLandingPage = () => {
   return (
     <div className="relative">
       <div className="flex">
-        <div className="w-1/4">
-          <Sidebar />
-        </div>
+        <div className="w-1/4">{/* <Sidebar /> */}</div>
         <div className="w-full px-8">
           <TopBar />
           <ConsumerPageHeader2 />
