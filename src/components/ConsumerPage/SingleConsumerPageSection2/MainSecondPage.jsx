@@ -6,10 +6,10 @@ import { TbNotes } from "react-icons/tb";
 import { useMyContext } from "../../../Context/MyContext";
 import WalletSingleComsunerPageLeftSection from "../SingleConsumerPage/WalletSection/WalletSingleComsunerPageLeftSection";
 const MainSecondPage = () => {
-  const { updatesecondSharedState } = useMyContext();
+  const { updateSecondSharedState } = useMyContext();
   const [section1] = WalletInfo;
   const handleClick = () => {
-    updatesecondSharedState(false);
+    updateSecondSharedState(false);
   };
   return (
     <>

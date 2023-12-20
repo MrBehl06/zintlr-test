@@ -3,15 +3,14 @@ import { MdSpeed } from "react-icons/md";
 import { useMyContext } from "../../../Context/MyContext";
 import { IoClose } from "react-icons/io5";
 const ConsumerSingleDetails = () => {
-  const { secondSharedState, updatesecondSharedState } = useMyContext();
+  const { secondSharedState, updateSecondSharedState } = useMyContext();
   const handleClick = (newValue) => {
     // Perform some logic
-    if (newValue === "open") {
-      updatesecondSharedState(null);
+    if (newValue === true) {
+      updateSecondSharedState(false);
     } else {
-      updatesecondSharedState("open");
+      updateSecondSharedState(true);
     }
-    console.log(secondSharedState);
   };
   return (
     <>
@@ -37,7 +36,7 @@ const ConsumerSingleDetails = () => {
             </button>
           </div>
         </div>
-        {secondSharedState === null ? (
+        {secondSharedState === false ? (
           <div className="h-full p-2">
             <h3 className="text-[12px]">Intiated</h3>
             <h4 className="text-[12px] opacity-50">Thur 19 Apr</h4>
@@ -45,10 +44,15 @@ const ConsumerSingleDetails = () => {
           </div>
         ) : (
           <div className="text-[40px]">
-            <a href=""onClick={(e)=>{
-              e.preventDefault();
-              handleClick(secondSharedState);
-            }} ><IoClose /></a>
+            <a
+              href=""
+              onClick={(e) => {
+                e.preventDefault();
+                handleClick(secondSharedState);
+              }}
+            >
+              <IoClose />
+            </a>
           </div>
         )}
       </div>

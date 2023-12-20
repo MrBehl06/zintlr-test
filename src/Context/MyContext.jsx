@@ -1,17 +1,28 @@
-// MyContext.js
 import React, { createContext, useContext, useState } from "react";
 
 const MyContext = createContext();
 
 export const MyContextProvider = ({ children }) => {
   const [sharedState, setSharedState] = useState(false);
-  const [secondSharedState, setsecondSharedState] = useState(false);
+  const [secondSharedState, setSecondSharedState] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [kycStatus, setKycStatus] = useState("");
+  const itemsPerPage = 9;
 
   const updateSharedState = (newState) => {
     setSharedState(newState);
   };
-  const updatesecondSharedState = (newState) => {
-    setsecondSharedState(newState);
+
+  const updateSecondSharedState = (newState) => {
+    setSecondSharedState(newState);
+  };
+
+  const updateSearchTerm = (newTerm) => {
+    setSearchTerm(newTerm);
+  };
+  const updateKycStatus = (newTerm) => {
+    setKycStatus(newTerm);
   };
 
   return (
@@ -19,8 +30,15 @@ export const MyContextProvider = ({ children }) => {
       value={{
         sharedState,
         secondSharedState,
+        searchTerm,
+        currentPage,
+        itemsPerPage,
+        kycStatus,
         updateSharedState,
-        updatesecondSharedState,
+        updateSecondSharedState,
+        updateSearchTerm,
+        updateKycStatus,
+        setCurrentPage,
       }}
     >
       {children}

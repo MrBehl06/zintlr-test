@@ -2,12 +2,12 @@ import React from "react";
 import { useMyContext } from "../../../../Context/MyContext";
 
 const WalletSingleComsunerPageLeftSection = ({ props }) => {
-  const { secondSharedState, updatesecondSharedState } = useMyContext();
+  const { secondSharedState, updateSecondSharedState } = useMyContext();
   const handleClick = (newValue) => {
-    if (newValue === "open") {
-      updatesecondSharedState(null);
+    if (newValue) {
+      updateSecondSharedState(false);
     } else {
-      updatesecondSharedState("open");
+      updateSecondSharedState(true);
     }
     console.log(secondSharedState);
   };
